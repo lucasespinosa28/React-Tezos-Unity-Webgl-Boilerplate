@@ -7,10 +7,10 @@ import "./App.css";
 
 const App = () => {
   const { unityProvider , sendMessage, isLoaded, addEventListener, removeEventListener } = useUnityContext({
-    loaderUrl: "build/tezos.loader.js",
-    dataUrl: "build/tezos.data",
-    frameworkUrl: "build/tezos.framework.js",
-    codeUrl: "build/tezos.wasm",
+    loaderUrl: "Build/tezos.loader.js",
+    dataUrl: "Build/tezos.data",
+    frameworkUrl: "Build/tezos.framework.js",
+    codeUrl: "Build/tezos.wasm",
   });
   
   const [Tezos, setTezos] = useState<TezosToolkit>(
