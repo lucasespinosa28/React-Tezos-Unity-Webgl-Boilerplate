@@ -1,0 +1,7 @@
+.Hidden {
+    display: none;
+}
+
+.Show {
+    display: flex;
+}

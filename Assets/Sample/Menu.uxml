@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Sample/style.uss?fileID=7433441132597879392&amp;guid=f95830df0432cf544bb164f936b02e0b&amp;type=3#style" />
+    <ui:VisualElement style="height: 100%; width: 100%; align-items: center; justify-content: center; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+        <ui:Label tabindex="-1" text="React Tezos Unity Webgl" display-tooltip-when-elided="true" name="Label" style="background-color: rgb(148, 198, 151); color: rgb(48, 48, 48); padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; min-width: 450px; -unity-text-align: upper-center;" />
+        <ui:VisualElement style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; background-image: none; background-color: rgba(255, 255, 255, 0.69); min-width: 450px; align-items: center;">
+            <ui:Label tabindex="-1" text="Address" display-tooltip-when-elided="true" name="LabelAddress" style="color: rgba(48, 48, 48, 255);" />
+            <ui:Label tabindex="-1" text="Contract" display-tooltip-when-elided="true" name="LabelContract" style="color: rgba(48, 48, 48, 255);" />
+            <ui:Label tabindex="-1" text="Number birds: " display-tooltip-when-elided="true" name="LabelBirds" style="color: rgba(48, 48, 48, 255);" />
+            <ui:Button text="Connect" display-tooltip-when-elided="true" name="ConnectButton" style="background-color: rgb(148, 198, 151);" />
+            <ui:Button text="Disconnect" display-tooltip-when-elided="true" name="DisconnectButton" style="background-color: rgb(148, 198, 151);" />
+            <ui:Button text="Increment by 1" display-tooltip-when-elided="true" name="IncrementButton" style="background-color: rgb(148, 198, 151);" />
+            <ui:Button text="Decrement by 1" display-tooltip-when-elided="true" name="DecrementButton" style="background-color: rgb(148, 198, 151);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
