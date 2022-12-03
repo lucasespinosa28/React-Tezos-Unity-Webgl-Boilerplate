@@ -58,5 +58,45 @@ The part of Csharp that will call the function in jslib which in turn will call 
      [DllImport("__Internal")]
      private static extern void DecrementContract();
      
-     
 ```
+The function in react that will receive unity events
+```jsx
+const increment = async (): Promise<void> => {
+    console.log(contract)
+    setLoadingIncrement(true);
+    try {
+      const op = await contract.methods.increment(1).send();
+      await op.confirmation();
+      const newStorage: any = await contract.storage();
+      if (newStorage) setStorage(newStorage.toNumber());
+      setUserBalance(await Tezos.tz.getBalance(userAddress));
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoadingIncrement(false);
+    }
+  };
+
+  
+  const decrement = async (): Promise<void> => {
+    setLoadingDecrement(true);
+    try {
+      const op = await contract.methods.decrement(1).send();
+      await op.confirmation();
+      const newStorage: any = await contract.storage();
+      if (newStorage) setStorage(newStorage.toNumber());
+      setUserBalance(await Tezos.tz.getBalance(userAddress) );
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoadingDecrement(false);
+    }
+  };
+
+```
+### for more information i recommend
+- [Local jslib]()
+- [Local React]()
+- [Local Unity]()
+- [Unity Webgl](https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html)
+- [tezos taquito](https://tezostaquito.io/)
