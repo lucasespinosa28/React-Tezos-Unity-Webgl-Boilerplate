@@ -22,3 +22,11 @@ const handleConnectTezosWallet = useCallback(async () => {
 [DllImport("__Internal")]
 public static extern void ConnectTezosWallet();
 ```
+### Example: Connect
+```Csharp
+Tezos.Wallet.ConnectTezosWallet();
+```
+### Example: Disconnect
+```Csharp
+Tezos.Wallet.DisconnectTezosWallet();
+```
