@@ -95,8 +95,8 @@ const increment = async (): Promise<void> => {
 
 ```
 ### for more information i recommend
-- [Local jslib]()
-- [Local React]()
-- [Local Unity]()
+- [Local jslib](https://github.com/lucasespinosa28/React-Tezos-Unity-Webgl-Boilerplate/blob/main/Assets/Plugins/Plugins/WebGL/ReactTezos.jslib)
+- [Local React](https://github.com/lucasespinosa28/React-Tezos-Unity-Webgl-Boilerplate/blob/main/ReactTezosWebTemplate/src/App.tsx)
+- [Local Unity](https://github.com/lucasespinosa28/React-Tezos-Unity-Webgl-Boilerplate/blob/main/Assets/Sample/BridgeScript.cs)
 - [Unity Webgl](https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html)
 - [tezos taquito](https://tezostaquito.io/)
