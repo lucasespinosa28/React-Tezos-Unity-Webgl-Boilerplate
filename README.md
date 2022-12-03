@@ -30,3 +30,33 @@ Tezos.Wallet.ConnectTezosWallet();
 ```Csharp
 Tezos.Wallet.DisconnectTezosWallet();
 ```
+# Custom Contract
+The first part is to create a filet type ```.jslib``` in ```Plugin``` folder to talk to unity to react
+```js
+mergeInto(LibraryManager.library, {
+    IncrementContract: function () {
+        try {
+            window.dispatchReactUnityEvent("IncrementContract");
+        } catch (e) {
+            console.warn("Failed to dispatch event");
+        }
+    },
+    DecrementContract: function () {
+        try {
+            window.dispatchReactUnityEvent("DecrementContract");
+        } catch (e) {
+            console.warn("Failed to dispatch event");
+        }
+    },
+});
+```
+The part of Csharp that will call the function in jslib which in turn will call in react.
+```cs
+     [DllImport("__Internal")]
+     private static extern void IncrementContract();
+
+     [DllImport("__Internal")]
+     private static extern void DecrementContract();
+     
+     
+```
